@@ -38,24 +38,18 @@ import org.springframework.security.access.prepost.PreFilter;
  * @author Luke Taylor
  * @since 3.1
  */
+
+/*
 public aspect AnnotationSecurityAspect implements InitializingBean {
 
-		/**
-		 * Matches the execution of any public method in a type with the Secured
-		 * annotation, or any subtype of a type with the Secured annotation.
-		 */
+
 		private pointcut executionOfAnyPublicMethodInAtSecuredType() :
 				execution(public * ((@Secured *)+).*(..)) && @this(Secured);
 
-		/**
-		 * Matches the execution of any method with the Secured annotation.
-		 */
+
 		private pointcut executionOfSecuredMethod() :
 				execution(* *(..)) && @annotation(Secured);
 
-		/**
-		 * Matches the execution of any method with Pre/Post annotations.
-		 */
 		private pointcut executionOfPrePostAnnotatedMethod() :
 				execution(* *(..)) && (@annotation(PreAuthorize) || @annotation(PreFilter)
 								|| @annotation(PostAuthorize) || @annotation(PostFilter));
@@ -92,3 +86,4 @@ public aspect AnnotationSecurityAspect implements InitializingBean {
 		}
 
 }
+*/
