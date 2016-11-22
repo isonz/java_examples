@@ -32,11 +32,13 @@ public class ApplicationTests {
 		userMapper.insert("AAA", 20);
 		User u = userMapper.findByName("AAA");
 		Assert.assertEquals(20, u.getAge().intValue());
+		
 		// update一条数据，并select出来验证
 		u.setAge(30);
 		userMapper.update(u);
 		u = userMapper.findByName("AAA");
 		Assert.assertEquals(30, u.getAge().intValue());
+		
 		// 删除这条数据，并select验证
 		userMapper.delete(u.getId());
 		u = userMapper.findByName("AAA");
